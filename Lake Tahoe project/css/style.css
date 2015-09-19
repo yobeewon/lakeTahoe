@@ -1,20 +1,39 @@
 
 /* import stylesheet from css folder, adds some newer style to the website */
+/*
 @import "import-styles.css";
+*/
 
 body {
-	text-align: center;
-}
-
-h1 {
-	font-size: 72px;
-	color: white;
+	color: #878787;
+	margin: 0;
 }
 
 header {
 	background-color: orange;
 }
 
-p {
+h1 {
+	font-size: 90px;
+	color: white;
+}
+
+h2 {
+	font-size: 53px;
+}
+
+h3 {
 	font-size: 20px;
+	color: #48525c;
+}
+
+/**** id's being used below ****/
+#primary-content {
+	border: 3px solid red;
+}
+
+#main-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 10px orange;
 }
