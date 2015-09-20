@@ -1,16 +1,7 @@
-
-/* import stylesheet from css folder, adds some newer style to the website */
-/*
-@import "import-styles.css";
-*/
-
+/**** type selectors ****/
 body {
 	color: #878787;
 	margin: 0;
-}
-
-.main-header {
-	background-color: orange;
 }
 
 h1 {
@@ -27,17 +18,50 @@ h3 {
 	color: #48525c;
 }
 
-/**** id's and classes being used below. Remember id uses( . )and class uses( # )****/
-.primary-content {
-	text-align: center;
-}
-
-.t-border {
-	border-top: 2px solid lightgrey;
-}
-
 #main-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-bottom: solid 10px orange;
 }
+
+.main-header {
+	background-color: orange;
+}
+
+/**** Example of descendant selector ****/
+.title {
+	color: white;
+	font-size: 26px;
+}
+
+/**** id's and classes being used below. Remember id uses( . )and class uses( # ) ****/
+.primary-content {
+	text-align: center;
+}
+
+.t-border {
+	border-top: 2px solid lightgray;
+}
+
+/**** Pseudo-class selectors below for links ****/
+
+/** not visited link **/
+a:link {
+	color: orange;
+}
+
+/** visited link **/
+a:visited {
+	color: lightblue;
+}
+
+/** mouse hover over link **/
+a:hover {
+	color: forestgreen;
+}
+
+/** activates when you click and unclick links **/
+a:active {
+	color: lightcoral;
+}
+
