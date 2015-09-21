@@ -2,10 +2,11 @@
 body {
 	color: #878787;
 	margin: 0;
+	font-size: 1em;
 }
 
 h1 {
-	font-size: 90px;
+	font-size: 5.625em; /* 90px/16px=5.625 the font size was 90px but I used the math formula to convert it to em size */
 	color: white;
 }
 
@@ -18,23 +19,30 @@ h3 {
 	color: #48525c;
 }
 
+/**** Id Selectors ****/
 #main-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-bottom: solid 10px orange;
 }
 
+/**** Class Selectors ****/
 .main-header {
 	background-color: orange;
 }
 
-/**** Example of descendant selector ****/
+/** Example of descendant selector **/
 .title {
 	color: white;
-	font-size: 26px;
+	font-size: 1.625em; /* 26px/16px=1.625 the font-size was 26px but I used the math formula to convert it to em size */
 }
 
-/**** id's and classes being used below. Remember id uses( . )and class uses( # ) ****/
+/**** Changed Content width ****/
+.primary-content,
+.secondary-content {
+	width: 60%;
+}
+
 .primary-content {
 	text-align: center;
 }
