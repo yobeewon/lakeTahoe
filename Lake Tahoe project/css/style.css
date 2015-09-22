@@ -3,15 +3,20 @@ body {
 	color: #878787;
 	margin: 0;
 	font-size: 1em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* here I include more then one font incase the users browser does not support it */
 }
 
 h1 {
 	font-size: 5.625em; /* 90px/16px=5.625 the font size was 90px but I used the math formula to convert it to em size */
-	color: white;
+	color: rgba(255, 255, 255, 1);
+	text-transform: uppercase; /* changes all text in h1 to upper case, you could also use lowercase and capitalize */
+	font-weight: normal;
 }
 
 h2 {
 	font-size: 53px;
+	text-decoration: underline; /* adds an underline to your text */
+	font-weight: normal;
 }
 
 h3 {
@@ -19,16 +24,17 @@ h3 {
 	color: #48525c;
 }
 
+
 /**** Id Selectors ****/
 #main-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: solid 10px orange;
+	border-bottom: solid 10px #ffa949;
 }
 
 /**** Class Selectors ****/
 .main-header {
-	background-color: orange;
+	background-color: #ffa949;
 }
 
 /** Example of descendant selector **/
@@ -43,7 +49,8 @@ h3 {
 	width: 60%;
 }
 
-.primary-content {
+.primary-content,
+.main-header {
 	text-align: center;
 }
 
@@ -55,7 +62,8 @@ h3 {
 
 /** not visited link **/
 a:link {
-	color: orange;
+	color: rgb(255, 169, 73);
+	text-decoration: none; /* removes underline from links */
 }
 
 /** visited link **/
@@ -65,7 +73,7 @@ a:visited {
 
 /** mouse hover over link **/
 a:hover {
-	color: forestgreen;
+	color: rgba(255, 169, 73, .4);
 }
 
 /** activates when you click and unclick links **/
