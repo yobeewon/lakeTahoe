@@ -19,11 +19,15 @@ h2 {
 	font-size: 53px;
 	text-decoration: underline; /* adds an underline to your text */
 	font-weight: normal;
+	line-height: 1.1;
+	margin-bottom: .5em; /* 26px/53px=.5em */
 }
 
 h3 {
 	font-size: 20px;
 	color: #48525c;
+	line-height: 1.2;
+	margin-bottom: 1.7em; /** 34px/20px=1.7em **/
 }
 
 
@@ -32,6 +36,7 @@ h3 {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-bottom: 10px solid #ffa949;
+	text-align: center;
 }
 
 /**** Class Selectors ****/
@@ -49,6 +54,7 @@ h3 {
 .primary-content,
 .secondary-content {
 	width: 60%;
+	margin: auto;
 }
 
 /** Stared working with Box model below **/
@@ -63,6 +69,11 @@ h3 {
 	border-top: 10px;
 	border-style: solid;
 	border-color: #ffa949;
+
+	margin-top: 105px;
+	margin-right: 0;
+	margin-bottom: 60px;
+	margin-left: 0;
 }
 /** Box model ends **/
 
@@ -71,10 +82,10 @@ h3 {
 	text-align: center;
 }
 
-.t-border {
+/**.t-border {
 	border-top: 2px solid lightgray;
 }
-
+**/
 /**** Pseudo-class selectors below for links ****/
 
 /** not visited link **/
