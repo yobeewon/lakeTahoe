@@ -31,7 +31,7 @@ h3 {
 #main-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: solid 10px #ffa949;
+	border-bottom: 10px solid #ffa949;
 }
 
 /**** Class Selectors ****/
@@ -45,11 +45,26 @@ h3 {
 	font-size: 1.625em; /* 26px/16px=1.625 the font-size was 26px but I used the math formula to convert it to em size */
 }
 
-/**** Changed Content width ****/
+/**** Layout Styles ****/
 .primary-content,
 .secondary-content {
 	width: 60%;
 }
+
+/** Stared working with Box model below **/
+.wildlife {
+	color: white;
+	background-color: #434a52;
+	padding-top: 18%;
+	padding-right: 24%;
+	padding-bottom: 18%;
+	padding-left: 24%;
+
+	border-top: 10px;
+	border-style: solid;
+	border-color: #ffa949;
+}
+/** Box model ends **/
 
 .primary-content,
 .main-header {
