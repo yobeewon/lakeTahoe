@@ -17,6 +17,7 @@ h1 {
 	text-transform: uppercase; /* changes all text in h1 to upper case, you could also use lowercase and capitalize */
 	font-weight: normal;
 	line-height: 1.3; /* gives space between the paragraph and the h1 area in your content to make for better spacing  */
+	text-shadow: 5px 8px 10px #222; /*gives our main h1 a shadow behind it*/
 }
 
 h2 {
@@ -58,12 +59,14 @@ li {
 	background-size: cover; /*insures our image scales proportionatly to size*/
 	background-repeat: no-repeat; /*this controls whether or not the image repeats itself*/
 	background-position: center;
+	text-shadow: 0 0 5px #be7b31;
 }
 
 /** Example of descendant selector **/
 .title {
 	color: white;
 	font-size: 1.625em; /* 26px/16px=1.625 the font-size was 26px but I used the math formula to convert it to em size */
+	text-shadow: 1px 3px 0 #e59740;
 }
 
 .intro {
@@ -139,6 +142,8 @@ li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	box-shadow: 15px 15px 10px rgba(0,0,0, .8); /*adds shadow behind box*/
 }
 /** Box model ends **/
 
@@ -150,6 +155,7 @@ li {
 .resorts,
 .tips {
 	width: 46.5%;
+	box-shadow: 10px 10px 10px rgba(0,0,0, .8); /*adds shadow behind box*/
 }
 
 .tips {
