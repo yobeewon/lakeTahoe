@@ -1,4 +1,8 @@
-/**** type selectors ****/
+/**** Base Styles ****/
+* {
+	box-sizing: border-box; /** forces the padding and borders into the width and height into the element instead of expanding it **/
+}
+
 body {
 	color: #878787;
 	margin: 0;
@@ -30,18 +34,30 @@ h3 {
 	margin-bottom: 1.7em; /** 34px/20px=1.7em **/
 }
 
+/*this tag targets all img's in the file and allows them to become fluid with screen size changes, also known as responsive imagery*/
+img {
+	max-width: 100%; 
+	margin-bottom: 20px; /*added space between bottom of img's and headers and or content*/
+}
 
-/**** Id Selectors ****/
-#main-footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	border-bottom: 10px solid #ffa949;
-	text-align: center;
+ul,
+ol {
+	margin: 30px 0; /*indents the li's*/
+}
+
+li {
+	margin-bottom: 10px; /*adds space between the bottom and li's*/
 }
 
 /**** Class Selectors ****/
 .main-header {
 	background-color: #ffa949;
+	padding-top: 170px;
+	height: 850px; /*Enlarged the space between the heading and the content below*/
+	background-image: url('../img/mountains.jpg'); /*the ../ means to move out of css directory and down into img directory and then access mountains.jpg*/
+	background-size: cover; /*insures our image scales proportionatly to size*/
+	background-repeat: no-repeat; /*this controls whether or not the image repeats itself*/
+	background-position: center;
 }
 
 /** Example of descendant selector **/
@@ -50,11 +66,54 @@ h3 {
 	font-size: 1.625em; /* 26px/16px=1.625 the font-size was 26px but I used the math formula to convert it to em size */
 }
 
+.intro {
+	font-size: 1.25em;
+	line-height: 1.6;
+}
+
 /**** Layout Styles ****/
 .primary-content,
 .secondary-content {
-	width: 60%;
+	width: 75%; /* with the width at 75% it will adjust to any screen size very smoothly */
+	padding-left: 50px;
+	padding-right: 50px;
 	margin: auto;
+	max-width: 960px; /*wont let elements go beyond this size in very large screen sizes*/
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+	text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+	padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+	border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+	font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+	border-top: 2px solid #dfe2e6;
 }
 
 /** Stared working with Box model below **/
@@ -74,18 +133,41 @@ h3 {
 	margin-right: 0;
 	margin-bottom: 60px;
 	margin-left: 0;
+
+	/*beginning here I started to customize the image inside the div*/
+	background-image: url('../img/bear.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 /** Box model ends **/
 
-.primary-content,
-.main-header {
-	text-align: center;
+.arrow {
+	width: 50px; /*scalled image down*/
 }
 
-/**.t-border {
-	border-top: 2px solid lightgray;
+/** Floated Columns **/
+.resorts,
+.tips {
+	width: 46.5%;
 }
-**/
+
+.tips {
+	float: right; /*moves .tips to the right of .resorts*/
+}
+
+.resorts {
+	float: left; /*adjust .resorts so it be placed next to .tips evenly*/
+}
+
+/** Float Clearfix **/
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
 /**** Pseudo-class selectors below for links ****/
 
 /** not visited link **/
