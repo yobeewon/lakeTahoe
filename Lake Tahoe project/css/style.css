@@ -39,6 +39,7 @@ h3 {
 img {
 	max-width: 100%; 
 	margin-bottom: 20px; /*added space between bottom of img's and headers and or content*/
+	border-radius: 10px;
 }
 
 ul,
@@ -143,7 +144,10 @@ li {
 	background-repeat: no-repeat;
 	background-position: center;
 
-	box-shadow: 15px 15px 10px rgba(0,0,0, .8); /*adds shadow behind box*/
+	box-shadow: 15px 15px 10px rgba(0,0,0, .6); /*adds shadow behind box*/
+
+	/*adds rounded corners to the content*/
+	border-radius: 10px;
 }
 /** Box model ends **/
 
@@ -155,7 +159,7 @@ li {
 .resorts,
 .tips {
 	width: 46.5%;
-	box-shadow: 10px 10px 10px rgba(0,0,0, .8); /*adds shadow behind box*/
+	box-shadow: 10px 10px 10px rgba(0,0,0, .6); /*adds shadow behind box*/
 }
 
 .tips {
